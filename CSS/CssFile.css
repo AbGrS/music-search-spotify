@@ -1,0 +1,10 @@
+.headerBlockBig{
+	width: 100%;
+    background: #c64379;
+    background-image: url(/Assets/Images/hero-img@2x.png);
+    background-size: auto 448px;
+    background-position: 50% 0px;
+    background-repeat: no-repeat;
+    height: 500px;
+    position: relative;
+}
