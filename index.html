@@ -35,7 +35,7 @@
 <div class="headerBlockBig">
     <img src="/Assets/Images/gl-logo@2x.png" style="position: absolute;max-height: 120px;top:20px;left:10px;">
 </div>
-<div style="background: #333441;width:100%;text-align: center;padding:10px">
+<div style="background: #333441;text-align: center;padding:10px">
 
 <form ng-submit="getSearchResults()">
     <input type="text" ng-model="searchInput" style="border-radius: 10px;background: white;padding:20px;min-width: 600px;border:none">
@@ -45,7 +45,10 @@
 
 </div>
 <div style="background: #383a49;min-height: 500px">
-    
+<div ng-repeat="eachItem in filteredResults">
+      {{eachItem}}
+</div>
+  
 </div>
 
 

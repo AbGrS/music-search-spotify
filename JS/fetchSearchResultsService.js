@@ -20,7 +20,7 @@
             getData: function(data,url){
                    return $http({
                                 method:'GET',
-                                url:url || 'https://api.spotify.com/artist/',
+                                url:url || 'https://api.spotify.com/v1/albums',
                                 params:data,
                                 cache:true
 
