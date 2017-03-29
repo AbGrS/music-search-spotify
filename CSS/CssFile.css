@@ -27,6 +27,23 @@
 	border:none
 }
 
+.artistImage{
+	position:relative;
+	width:300px;
+	height:400px
+}
+
+.artistName{
+	position: absolute;
+    bottom: 0;
+    background: white;
+    width: 100%;
+    padding: 25px 0px;
+    border-radius: 1px;
+    text-align: center;
+    border-bottom-left-radius: 2px;
+    border-bottom-right-radius: 2px
+}
 @media (max-width:480px)  { 
 
 	.headerBlockBig{
@@ -48,5 +65,22 @@
 	.searchButton{
 		width: 35%;
    		margin: 18px 0;
+	}
+
+	.artistImage{
+		position: relative;
+	    width: 300px;
+	    height: 400px;
+	    /* background-position: 50%; */
+	    background-repeat: no-repeat;
+	    background-size: 30% 20%;
+	    background-position-x: 23px;
+	}
+
+	.artistName{
+	    left: 113px;
+	    width: 29%;
+	    padding: 31px 96px;
+	    bottom: auto;
 	}
 }

@@ -47,18 +47,10 @@
 
 </div>
 <div style="background: #383a49;min-height: 500px">
-<div ng-style="{'position':'relative', 'width':'300px','height':'400px','background-image': 'url(' + filteredArtists.images[1].url + ')'}">
+<div class="artistImage" ng-style="{'background-image': 'url(' + filteredArtists.images[1].url + ')'}">
   <!-- <img src="{{filteredArtists.images[0].url}}" style="min-width: 400px; min-height: 500px"> -->
 
-  <div ng-show="filteredArtists.name" style="position: absolute;
-    bottom: 0;
-    background: white;
-    width: 100%;
-    padding: 25px 0px;
-    border-radius: 1px;
-    text-align: center;
-    border-bottom-left-radius: 2px;
-    border-bottom-right-radius: 2px">
+  <div ng-show="filteredArtists.name" class="artistName">
       {{filteredArtists.name}}
   </div>
 </div>
