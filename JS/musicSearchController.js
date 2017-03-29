@@ -19,17 +19,32 @@
                  $scope.allResults= response.data.albums[0].tracks.items;
                  
             });
-       $scope.filteredResults=[];
-       $scope.filteredArtists=[];
+       
+
        $scope.getSearchResults= function(){
+         $scope.filteredAlbums=[];
+         $scope.filteredArtists=[];
+         $scope.filteredResults=[];
          var searchInput= $scope.searchInput;
          
 
          for(var eachItem in $scope.allResults){
-            if(($scope.allResults[eachItem].name).toLowerCase()===searchInput.toLowerCase() || ($scope.allResults[eachItem].artists[0].name).toLowerCase()===searchInput.toLowerCase()){
-                $scope.filteredResults.push($scope.allResults[eachItem]);
+            if(($scope.allResults[eachItem].name).toLowerCase()===searchInput.toLowerCase()){
+                $scope.filteredAlbums.push($scope.allResults[eachItem]);
+            }
+
+            else if(($scope.allResults[eachItem].artists[0].name).toLowerCase()===searchInput.toLowerCase()){
+                 $scope.filteredArtists.push($scope.allResults[eachItem]);
             }
          }
+
+         if($scope.filteredAlbums.length>0){
+            $scope.filteredResults= $scope.filteredAlbums;
+         }
+         else{
+             $scope.filteredResults= $scope.filteredArtists;
+         }
+
 
          for(var eachItem in $scope.filteredResults){
             for(var eachArtist in $scope.filteredResults[eachItem].artists){
@@ -37,7 +52,7 @@
 
                 fetchSearchResults.getData('', href).then(function(response){
                     $scope.filteredArtists= response.data;
-                })
+                });
 
                 // var params= href.split('/')[href.split('/').length-1];
                 // var url= href.substr(0, href.indexOf(params));
@@ -52,4 +67,4 @@
        };
 
     }
-})();
+})(); 
