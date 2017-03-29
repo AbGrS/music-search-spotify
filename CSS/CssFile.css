@@ -8,3 +8,47 @@
     height: 500px;
     position: relative;
 }
+
+.searchTextBox{
+	border-radius: 10px;
+	background: white;
+	padding:20px;
+	min-width: 600px;
+	border:none
+}
+
+.searchButton{
+	margin-left: -110px;
+	min-width:90px;
+	cursor:pointer;
+	color:#fff;padding: 15px;
+	background: #d05d84;
+	border-radius: 20px;
+	border:none
+}
+
+@media (max-width:480px)  { 
+
+	.headerBlockBig{
+		height: 558px;
+		background-position: 50%;
+	    background-repeat: no-repeat;
+	    background-size: 100% 37%;
+	    background-position-x: -2px;
+	}
+	.headerBlockBig img{
+		max-height: 60px !important;
+	}
+
+	.searchTextBox{
+		width: 82%;
+	    min-width: 73px;
+	    margin-right: 20px;
+	}
+
+	.searchButton{
+		width: 35%;
+	    margin-top: 18px;
+	    margin-left: -25px;
+	}
+}

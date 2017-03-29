@@ -29,6 +29,8 @@
     <script src="../JS/fetchSearchResultsService.js"></script>
     <script src="../JS/musicSearchController.js"></script>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
 <body ng-app="Home" style="margin: 0" ng-controller="musicSearchController" ng-cloak>
 
@@ -38,8 +40,8 @@
 <div style="background: #333441;text-align: center;padding:10px">
 
 <form ng-submit="getSearchResults()">
-    <input type="text" ng-model="searchInput" style="border-radius: 10px;background: white;padding:20px;min-width: 600px;border:none">
-     <button type="submit" style="margin-left: -110px;min-width:90px;cursor:pointer;color:#fff;padding: 15px;background: #d05d84;border-radius: 20px;border:none">Search</button>
+    <input type="text" ng-model="searchInput" class="searchTextBox">
+     <button type="submit" class="searchButton">Search</button>
 </form>
 
 
