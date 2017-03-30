@@ -1,3 +1,6 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+}
 .headerBlockBig{
 	width: 100%;
     background: #c64379;
@@ -10,7 +13,7 @@
 }
 
 .searchTextBox{
-	border-radius: 10px;
+	border-radius: 30px;
 	background: white;
 	padding:20px;
 	min-width: 600px;
@@ -18,13 +21,15 @@
 }
 
 .searchButton{
-	margin-left: -110px;
-	min-width:90px;
-	cursor:pointer;
-	color:#fff;padding: 15px;
-	background: #d05d84;
-	border-radius: 20px;
-	border:none
+	margin-left: -128px;
+    min-width: 115px;
+    cursor: pointer;
+    color: #fff;
+    padding: 15px;
+    background: #d05d84;
+    border-radius: 20px;
+    border: none;
+    text-transform: uppercase;
 }
 
 .artistImage{
