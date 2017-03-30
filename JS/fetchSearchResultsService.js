@@ -24,19 +24,6 @@
                                 params:data,
                                 cache:true
 
-                    })
-            },
-            setRating: function(data,url){
-                 return $http({
-                                method:'POST',
-                                url:url||'http://api.nationposts.com/api/ratings',
-                                data:$httpParamSerializerJQLike(data),
-                                 headers: {
-                                      'Content-Type': 'application/x-www-form-urlencoded'
-                                }
-
-                    }).then(function(response){
-                        console.log(response);
                     });
             }
         
