@@ -41,6 +41,8 @@ body {
 .artistName{
 	position: absolute;
     bottom: 0;
+    font-weight: bold;
+    color: #2a2a33;
     background: white;
     width: 100%;
     padding: 25px 0px;
@@ -48,6 +50,23 @@ body {
     text-align: center;
     border-bottom-left-radius: 2px;
     border-bottom-right-radius: 2px
+}
+
+.albumImage{
+	width: 300px;
+    min-height: 142px;
+    background-repeat: no-repeat;
+    background-size: 35% 62%;
+    background-position-x: 20px;
+}
+
+.albumName{
+	position: absolute;
+    top: 18px;
+    left: 139px;
+    bottom: auto;
+    font-size: 25px;
+    color: #303c4d;
 }
 @media (max-width:480px)  { 
 
